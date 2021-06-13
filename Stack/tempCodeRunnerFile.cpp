@@ -1,0 +1,1 @@
+printf("\n pop = %d \n",pop());

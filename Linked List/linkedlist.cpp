@@ -164,27 +164,27 @@ int isSorted(struct node *p){
     return 1;
 
 }
-// int Duplicate(struct node *p){
-//     node *p=first;
-//     node *q=first->next;
+int Duplicate(struct node *p){
+    node *p=first;
+    node *q=first->next;
     
-//     while(p!=NULL){
+    while(p!=NULL){
     
-//     if(p->data!=q->data) 
-//     {
-//         p=q;
-//         q=q->next;
-//     }
-//     else{
-//         p->next=q->next;
-//         free(q);
-//         q=p->next;
-//     }
+    if(p->data!=q->data) 
+    {
+        p=q;
+        q=q->next;
+    }
+    else{
+        p->next=q->next;
+        free(q);
+        q=p->next;
+    }
 
-//     }
+    }
 
-//     return 0;
-// }
+    return 0;
+}
 void Reverse(struct node *p){
 
     int A[5],i;
@@ -273,20 +273,20 @@ int main(){
     Create(A,5);
     Create2(B,5);
     printf("\n");
-    // insert(3,1);
+    insert(3,1);
     // insertlast(2);
-    // insertsort(first,3);
-    // Delete(first,3);
+    insertsort(first,3);
+    Delete(first,3);
     display(first);
-    // if(isSorted(first)){
-    //     printf("\n Sorted \n");
-    // }
-    // else{
-    //     printf("\n Not Sorted \n ");
-    // }
+    if(isSorted(first)){
+        printf("\n Sorted \n");
+    }
+    else{
+        printf("\n Not Sorted \n ");
+    }
     
-    // Duplicate(first);
-    // reverse(first);
+    Duplicate(first);
+    reverse(first);
     printf("\n");
     Rdisplay(second);
     Merging(first,second);
@@ -298,11 +298,11 @@ int main(){
     else{
         printf("\n NotLoop \n");
     }
-    // printf("\n Count = %d \n",count(first));
-    // printf("\n sum = %d \n",sum(first));
-    // printf("\n max = %d \n",max(first));
-    // temp=search(first,2);
-    // printf("\n Search = %d \n",temp->data); 
+    printf("\n Count = %d \n",count(first));
+    printf("\n sum = %d \n",sum(first));
+    printf("\n max = %d \n",max(first));
+    temp=search(first,2);
+    printf("\n Search = %d \n",temp->data); 
     printf("\n");
     return 0;
 }
