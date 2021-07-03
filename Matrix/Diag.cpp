@@ -42,7 +42,7 @@ int main(){
     Set(&m,2,2,4);
     Set(&m,3,3,7);
     Set(&m,4,4,2);
-    printf("\n %d \n",Get(m,2,2));
+    printf("\nGet 2 2 = %d \n",Get(m,2,2));
     Display(m);
 
     return 0;
