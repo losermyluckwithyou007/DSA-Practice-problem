@@ -42,7 +42,8 @@ void quickSort(int A[], int l, int h){
 
 int main(){
 
-    int A[] = {4,5,8,10,1,3,2,6,9}; int n = sizeof(A)/sizeof(A[0]);
+    int A[] = {4,5,8,10,1,3,2,6,9}; 
+    int n = sizeof(A)/sizeof(A[0]);
 
     int l=0,h=INT32_MAX;
 
